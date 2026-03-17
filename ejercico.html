@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculardora</title>
+    <style>
+      .calculadora {
+        width: 300px;
+        height: 500px;
+        background-color: grey;
+      }
+      .numeros {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .numeros123 {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .numeros123 {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .divsNumeros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 20px;
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>calculadora</h1>
+    <div class="calculadora">
+      <div class="numeros"></div>
+    </div>
+    <script>
+      let divsNumeros = ""
+        for( let cont = 1; cont <= 9; cont++ ) {
+            divsNumeros= divsNumeros +`<div class= "num" id=${cont}> ${cont}`
+        }
+
+      document.querySelector(".numeros").innerHTML = divsNumeros;
+    </script>
+  </body>
+</html>
