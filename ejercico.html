@@ -12,37 +12,26 @@
       }
       .numeros {
         display: flex;
-        width: 300px;
-        height: 300px;
-        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        align-items: center;
+        gap: 40px;
+        background-color: grey;
       }
-      .numeros123 {
-        display: flex;
-        width: 300px;
-        height: 300px;
+      .num {
         display: flex;
         justify-content: center;
-        gap: 10px;
-      }
-
-      .numeros123 {
-        display: flex;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: aliceblue;
+        border: 1px solid black;
+        margin-top: 60px;
       }
       .divsNumeros {
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 20px;
-        background-color: rgb(255, 255, 255);
-        
+        background-color: rgb(255, 0, 0);
       }
     </style>
   </head>
@@ -52,10 +41,11 @@
       <div class="numeros"></div>
     </div>
     <script>
-      let divsNumeros = ""
-        for( let cont = 1; cont < 10; cont++ ) {
-            divsNumeros= divsNumeros +`<div class= "num" id=${cont}> ${cont}`
-        }
+      let divsNumeros = "";
+      for (let cont = 1; cont <= 9; cont++) {
+        divsNumeros =
+          divsNumeros + `<div class= "num" id=${cont}> ${cont}</div>`;
+      }
 
       document.querySelector(".numeros").innerHTML = divsNumeros;
     </script>
